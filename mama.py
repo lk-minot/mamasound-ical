@@ -43,5 +43,5 @@ for soup in soup.find_all("li"):
         eventdic = {"name": name, "genre": genre.strip(), "date": date, "place": place, "price": price, "uid": cpt}
         add_event(eventdic)
 
-with open('test.ics', mode='wb') as ical:
+with open('mamasound.ics', mode='wb') as ical:
     ical.write(cal.to_ical())
